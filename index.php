@@ -1,5 +1,5 @@
 <?php
- // Cargamos LIGA3
+// Cargamos LIGA3
  require_once 'LIGA3/LIGA.php';
  
  // Personalizo una conexión a la base de datos (servidor, usuario, contraseña, schema)
@@ -39,7 +39,8 @@
 
  // Guardo el bufer para colocarlo en el layout
  ob_start();
- // Tabla con instancias
+echo "<h1>Bienvenida a mi mundo, soy Viridiana Méndez Segovia</h1>";
+// Tabla con instancias
   $cols = array('*', '-contraseña', 'acción'=>'<a href="?borrar=@[0]">Borrar</a>');
   $join = array('depende'=>$liga);
   $pie  = '<th colspan="@[numCols]">Total de instancias: @[numReg]</th>';
